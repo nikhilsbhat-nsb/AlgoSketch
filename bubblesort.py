@@ -8,9 +8,9 @@ def changeRun(run):
     running = run
 
 
-def bubble_sort(data, drawData, timeTick, l):
+def bubble_sort(data, drawData, timeTick):
     for i in range(len(data)):
-        for j in range(len(data) - i):
+        for j in range(len(data)-i):
             drawData(data, ['yellow' if x == j or x == j +
                      1 else 'red' for x in range(len(data))])
             time.sleep(timeTick)
